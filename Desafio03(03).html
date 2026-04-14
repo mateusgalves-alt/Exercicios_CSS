@@ -1,55 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio03-CSS</title>
+    <title>Desafio 3</title>
     <style>
         *{
-            margin: 0;
+            margin: 0px;
             padding: 0;
         }
         body{
-           background-color: black;
+            background-color: #ccffb9;
         }
         .prin{
-            background-color: aliceblue;
-            border-radius: 10px;
-            width: 80%;
+            background-color: #1E1E1E;
+            width: 55%;
             margin: auto;
-            padding: 50px;
-        }
-          .menu{
-           background-color: #000000;
-            padding: 13px;
-            text-align: center;
-            border-radius: 20px;
-        }
-        span{
-            color: #ffffff;
-            margin: 1px;
-            font-size:medium;
-            font-family:Georgia, 'Times New Roman', Times, serif ;
-            font-weight: 100;
-        }
-        span:hover{
-            color: #949791;
-            margin: 1px;
-            font-size:medium;
-            font-family:Georgia, 'Times New Roman', Times, serif ;
-            font-weight: 100;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .cent{
             text-align: center;
             align-items: center;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 700;
-            
+
         }
         .corV{
             float: left;
             margin-right: 20px;
             margin-bottom: 20px;
+        }
+        .menu{
+            background-color: #2D4A22;
+            padding: 13px;
+            text-align: center;
+            border-radius: 20px;
+
+        }
+        span{
+            color: #A8C686;
+            margin: 1px;
+            font-size:medium;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            font-weight: 100;
+        }
+        span{
+            color: #A8C686;
+            margin: 1px;
+            font-size:medium;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            font-weight: 100;
         }
         .cor{
             text-align: center;
@@ -57,9 +61,6 @@
             margin-bottom: 30px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, 'Arial Narrow', Arial, sans-serif, Tahoma, Geneva, Verdana, Verdana, Geneva, Tahoma, sans-serif;
             color:#2D4A22 ;
-        }
-        .clear{
-            clear: both;
         }
         .img{
             border-radius: 20px;
@@ -70,10 +71,62 @@
             text-align: justify;
             color: #4e5b39;
             font-weight: 550;
+           
+           
         }
-      
-            
+        .corT{
+            float: left;
+            width: calc(33.33% - 12px);
+            margin: 5px;
+            text-align: center;
+            box-sizing: border-box;
 
+        }
+        .corT:hover{
+            float: left;
+            width: calc(33.33% - 18px);
+            margin: 5px;
+            text-align: center;
+            box-sizing: border-box;
+
+        }
+        .clear{
+            clear: both;
+        }
+        .img2{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        hr{
+            border: none;
+            border-top: 3px solid #A8C686;
+             margin: 15px 0;
+             border-radius: 20px;
+
+        }
+        legend {
+            color: #4A6741;
+            font-size: small;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            font-weight: 750;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .rodape{
+            color: #647651;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -81,32 +134,25 @@
         <header>
             <div class="cent">
                 <picture>
-                    <img class="img" src="Imagem/Foto TRUMP.webp" alt="logo" height="150" width="150">
+                    <img class="logo" src="Imagens/logo.png" alt="logo">
                 </picture>
             </div>
             <div class="menu">
             <p class="cent">
-                <a href="#"><span>HOME</span></a>&nbsp;
-                <a href="#"><span>CONDOMINIOS</span></a>&nbsp;
-                <a href="#"><span>LAZER</span></a>&nbsp;
-                <a href="#"><span>PLANOS</span></a>&nbsp;
+                <a href="#"><span>HOME</span></a>
+                <a href="#"><span>CONDOMINIOS</span></a>
+                <a href="#"><span>LAZER</span></a>
+                <a href="#"><span>PLANOS</span></a>
             </p>
             </div>
-            <div class="clear"></div>
         </header>
         <main>
             <div>
-                <h2 class="cor">Conheça a Lorem Ipsum</h1>
-                    <div class="clear"></div>              
+                <h2 class="cor">Conheça a Lorem Ipsum</h1>              
                     <div class="corV">
-                        <img class="img" src="Imagem/allianz-parque-1.webp" height="200" width="300">
+                        <img class="img" src="Imagens/perro cavifax.jpg" height="200" width="300">
                     </div>
-                    
-                    
-                    <div>
-                        <p class="font">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, a voluptas? Quidem nesciunt quo sint quibusdam fugit, reprehenderit quia cum assumenda voluptate nostrum, dicta id. Obcaecati minus perferendis consequuntur aliquid!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, a voluptas? Quidem nesciunt quo sint quibusdam fugit, reprehenderit quia cum assumenda voluptate nostrum, dicta id. Obcaecati minus perferendis consequuntur aliquid!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, a voluptas? Quidem nesciunt quo sint quibusdam fugit, reprehenderit quia cum assumenda voluptate nostrum, dicta id. Obcaecati minus perferendis consequuntur aliquid!.
-                        </p>
+                    <div class="txts">
                         <p class="font">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, a voluptas? Quidem nesciunt quo sint quibusdam fugit, reprehenderit quia cum assumenda voluptate nostrum, dicta id. Obcaecati minus perferendis consequuntur aliquid!
                         </p>
@@ -126,22 +172,21 @@
                     <p class="font">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates placeat perspiciatis, exercitationem totam, illo hic accusamus quaerat ut laboriosam tenetur tempora quae? Mollitia, molestiae cupiditate esse autem perspiciatis in aut!
                     </p>
-                    
+                    <hr>
                 <div class="corT">
-                    <img class="img2" src="Imagem/Bolsonaro-Impeachment-1.webp" height="200" width="270">
-                    <legend>Vila Nova Deli</legend>
+                    <img class="img2" src="Imagens/meme1.jfif" >
+                    <legend>Davi Brito</legend>
                 </div>
-                
                 <div class="corT">
-                    <img class="img3" src="Imagem/lula_dedo_nine_reproducao_bocaonews_widelg.jpg" height="200" width="270">
-                    <legend>Paraty Resort</legend>
+                    <img class="img2" src="Imagens/meme2.jfif" >
+                    <legend>Gustavo lima</legend>
                 </div>
-                
                 <div class="corT">
-                    <img class="img4" src="Imagem/trump.putin_.nobel_-660x372.jpg.webp" height="200" width="270">
-                    <legend>Five Towers</legend>
+                    <img class="img2" src="Imagens/Cozy vampire 🧛🏻.jfif" >
+                    <legend>Peruca</legend>
                 </div>
                 <div class="clear"></div>
+                <hr>
             <p class="font">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates placeat perspiciatis, exercitationem totam, illo hic accusamus quaerat ut laboriosam tenetur tempora quae? Mollitia, molestiae cupiditate esse autem perspiciatis in aut!
             </p>
@@ -149,9 +194,8 @@
     </main>
     <hr>
     <footer>
-        <p class="cent"> <small>&copy; Lorem ipsum <br> SENAI/SP</small></p>
+        <p class="rodape"> <small>&copy; Lorem ipsum <br> SENAI/SP</small></p>
     </footer>
     </div>    
-    
 </body>
 </html>
